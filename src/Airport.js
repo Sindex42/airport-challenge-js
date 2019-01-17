@@ -7,9 +7,11 @@ class Airport {
 
   land (plane) {
     this.hangar.push(plane)
+    return this.hangar
   }
 
   takeOff (plane) {
     this.hangar.pop(plane)
+    return this.hangar
   }
 }

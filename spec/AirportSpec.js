@@ -9,20 +9,25 @@ describe('Airport', function () {
     plane = jasmine.createSpy('plane')
   })
 
-  it('should have an empty hangar', function () {
-    expect(airport.hangar).toEqual([])
+  describe('#hangar', function () {
+    it('should be empty by default', function () {
+      expect(airport.hangar).toEqual([])
+    })
   })
 
-  it('should land a plane', function () {
-    airport.land(plane)
-    expect(airport.hangar).toContain(plane)
+  describe('#land', function () {
+    it('should land a plane', function () {
+      airport.land(plane)
+      expect(airport.hangar).toContain(plane)
+    })
   })
 
-  it('should take off a plane', function () {
-    airport.land(plane)
-    airport.takeOff(plane)
+  describe('#take_off', function () {
+    it('should take off a plane', function () {
+      airport.hangar = [plane]
+      airport.takeOff(plane)
 
-    expect(airport.hangar).toEqual([])
+      expect(airport.hangar).toEqual([])
+    })
   })
-
 })
