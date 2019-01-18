@@ -6,10 +6,10 @@ class Plane {
   }
 
   stopFlying () {
-    this.isFlying = false
+    return this.isFlying = false
   }
 
   startFlying () {
-    this.isFlying = true
+    return this.isFlying = true
   }
 }
