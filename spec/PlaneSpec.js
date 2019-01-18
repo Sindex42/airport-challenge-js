@@ -20,4 +20,11 @@ describe('Plane', function () {
       expect(plane.isFlying).toEqual(false)
     })
   })
+
+  describe('#startFlying', function () {
+    it ('starts flying', function () {
+      plane.startFlying()
+      expect(plane.isFlying).toEqual(true)
+    })
+  })
 })

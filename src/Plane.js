@@ -8,4 +8,8 @@ class Plane {
   stopFlying () {
     this.isFlying = false
   }
+
+  startFlying () {
+    this.isFlying = true
+  }
 }
