@@ -1,7 +1,7 @@
 'use strict'
 
 class Airport {
-  constructor(hangar) {
+  constructor (hangar) {
     this.hangar = []
   }
 

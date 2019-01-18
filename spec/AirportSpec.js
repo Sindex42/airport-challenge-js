@@ -1,4 +1,5 @@
 'use strict'
+/* global describe, it, expect, beforeEach, jasmine */
 
 describe('Airport', function () {
   let airport
@@ -9,14 +10,12 @@ describe('Airport', function () {
     plane = jasmine.createSpy('plane')
   })
 
-  describe('#hangar', function () {
-    it('should be empty by default', function () {
-      expect(airport.hangar).toEqual([])
-    })
+  it('should be empty by default', function () {
+    expect(airport.hangar).toEqual([])
   })
 
   describe('#land', function () {
-    it('should land a plane', function () {
+    it('should add a plane to the hangar', function () {
       airport.land(plane)
       expect(airport.hangar).toContain(plane)
     })
