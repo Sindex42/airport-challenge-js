@@ -1,5 +1,31 @@
 # Makers Academy - Airport Challenge in Javascript
 
+A reimplementation of the Airport challenge: TDD of a two class app in JavaScript. Tested using the Jasmine Framework
+
+## Getting started
+
+1. Clone this repo `git clone git@github.com:Sindex42/airport-challenge-js.git`
+2. Change directory `cd airport-challenge-js`
+
+### Testing 
+
+1. Run tests with Jasmine `open SpecRunner.html`
+
+### Usage
+
+- In the same SpecRunner browser window, open up the console e.g. in Chrome:  
+  `ctrl + shift + J` (windows) or 
+ `cmd + option + J` (mac)
+
+- Planes can land at airports
+
+![Imgur](https://i.imgur.com/fcPS6Bu.png)
+ 
+- Planes cannot land if the weather is stormy
+
+![Imgur](https://i.imgur.com/ExNCGl1.png)
+
+
 ## User Stories
 
 ```
